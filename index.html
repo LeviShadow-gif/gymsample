@@ -2163,201 +2163,152 @@
     /* =============================================
    RESPONSIVE
    ============================================= */
-    @media (max-width: 1280px) {
-      .programs-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
+    /* =============================================
+RESPONSIVE FIXED
+============================================= */
 
-      .trainers-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
+@media (max-width: 1280px) {
 
-      .footer-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
-      }
+.programs-grid,
+.trainers-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
 
-      .gallery-masonry {
-        columns: 3;
-      }
-    }
+.gallery-masonry {
+  columns: 3;
+}
 
-    @media (max-width: 1024px) {
-      .container {
-        padding: 0 36px;
-      }
+.footer-grid {
+  grid-template-columns: 1fr 1fr;
+}
+}
 
-      #navbar {
-        padding: 18px 36px;
-      }
+@media (max-width: 1024px) {
 
-      #navbar.scrolled {
-        padding: 12px 36px;
-      }
+.container,
+.hero-content {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
 
-      .hero-content {
-        padding: 0 36px;
-        padding-top: 90px;
-      }
+#navbar {
+  padding: 16px 30px !important;
+}
 
-      .nav-links {
-        display: none;
-      }
+.nav-links,
+.nav-social,
+.btn-join {
+  display: none !important;
+}
 
-      .hamburger {
-        display: flex;
-      }
+.hamburger {
+  display: flex !important;
+}
 
-      .nav-social {
-        display: none;
-      }
+.about-grid,
+.contact-grid,
+.pricing-grid {
+  grid-template-columns: 1fr !important;
+}
 
-      .about-grid {
-        grid-template-columns: 1fr;
-        gap: 56px;
-      }
+.transform-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
 
-      .about-img-accent {
-        display: none;
-      }
+.gallery-masonry {
+  columns: 2;
+}
+}
 
-      .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 56px;
-      }
+@media (max-width: 768px) {
 
-      .transform-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
+html,
+body {
+  overflow-x: hidden !important;
+  width: 100%;
+}
 
-      .pricing-grid {
-        grid-template-columns: 1fr;
-        max-width: 480px;
-        margin-left: auto;
-        margin-right: auto;
-      }
+* {
+  max-width: 100%;
+}
 
-      .price-card.featured {
-        transform: none;
-      }
+.container,
+.hero-content {
+  padding-left: 18px !important;
+  padding-right: 18px !important;
+}
 
-      .section-pad {
-        padding: 100px 0;
-      }
+#navbar {
+  padding: 14px 18px !important;
+}
 
-      .gallery-masonry {
-        columns: 3;
-      }
-    }
+.hero-title {
+  font-size: clamp(2.8rem, 12vw, 4.5rem) !important;
+  line-height: 1;
+}
 
-    @media (max-width: 768px) {
-      html {
-        font-size: 14px;
-      }
+.hero-cta {
+  flex-direction: column;
+}
 
-      .container {
-        padding: 0 20px;
-      }
+.btn-primary,
+.btn-secondary {
+  width: 100%;
+  justify-content: center;
+}
 
-      #navbar {
-        padding: 14px 20px;
-      }
+.programs-grid,
+.trainers-grid,
+.transform-grid,
+.pricing-grid,
+.footer-grid,
+.about-grid,
+.contact-grid,
+.form-row {
+  grid-template-columns: 1fr !important;
+}
 
-      .hero-content {
-        padding: 0 20px;
-        padding-top: 80px;
-      }
+.gallery-masonry {
+  columns: 1;
+}
 
-      .hero-title {
-        font-size: clamp(3.2rem, 14vw, 5.5rem);
-      }
+.testi-card {
+  min-width: 100%;
+}
 
-      .hero-cta {
-        flex-direction: column;
-        gap: 12px;
-      }
+.hero-stats,
+.counters {
+  gap: 20px;
+}
 
-      .btn-primary,
-      .btn-secondary {
-        width: 100%;
-        justify-content: center;
-      }
+.section-pad {
+  padding: 75px 0;
+}
 
-      .hero-stats {
-        gap: 28px;
-      }
+.about-img-accent {
+  display: none;
+}
+}
 
-      .programs-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 14px;
-      }
+@media (max-width: 480px) {
 
-      .trainers-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 14px;
-      }
+.hero-title {
+  font-size: 2.4rem !important;
+}
 
-      .transform-grid {
-        grid-template-columns: 1fr;
-      }
+.section-title,
+.cta-title {
+  font-size: 2.5rem !important;
+}
 
-      .about-features {
-        grid-template-columns: 1fr;
-      }
+.price-num {
+  font-size: 4rem;
+}
 
-      .form-row {
-        grid-template-columns: 1fr;
-      }
-
-      .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 36px;
-      }
-
-      .footer-bottom {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .testi-card {
-        min-width: 100%;
-      }
-
-      .gallery-masonry {
-        columns: 2;
-      }
-
-      .section-pad {
-        padding: 80px 0;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .programs-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .trainers-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-stats {
-        gap: 20px;
-      }
-
-      .gallery-masonry {
-        columns: 2;
-        gap: 8px;
-      }
-
-      .section-tag {
-        font-size: .6rem;
-      }
-
-      #cta-banner {
-        padding: 80px 0;
-      }
-    }
+.gallery-masonry {
+  columns: 1;
+}
+}
   </style>
 </head>
 
